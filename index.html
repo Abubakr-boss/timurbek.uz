@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Russian Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Learn English: Match & Quiz</h1>
+
+    <!-- Drag & Drop Game -->
+    <div id="drag-game">
+        <h2>Match the English word to its Russian meaning</h2>
+        <div class="container">
+            <div class="words">
+                <div class="word" draggable="true" data-translate="яблоко">apple</div>
+                <div class="word" draggable="true" data-translate="кошка">cat</div>
+                <div class="word" draggable="true" data-translate="собака">dog</div>
+                <div class="word" draggable="true" data-translate="книга">book</div>
+            </div>
+            <div class="targets">
+                <div class="target" data-word="яблоко">яблоко</div>
+                <div class="target" data-word="кошка">кошка</div>
+                <div class="target" data-word="собака">собака</div>
+                <div class="target" data-word="книга">книга</div>
+            </div>
+        </div>
+        <h3 id="match-result"></h3>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-game" style="display:none;">
+        <h2>Quiz: Translate to Russian</h2>
+        <p id="quiz-question"></p>
+        <input type="text" id="quiz-answer" placeholder="Type in Russian">
+        <button id="submit-answer">Submit</button>
+        <h3 id="quiz-result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
